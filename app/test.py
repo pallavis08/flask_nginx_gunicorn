@@ -20,6 +20,7 @@
 
 #make a POST request 
 import requests
-text_input = {"text" : "I am happy"}
+text_input = {"text" : "I bought this product one month ago. I am very happy with its performane. It is giving excellent result so far. 
+              It is very fast and efficient and reliable product. I will highly recommend it to others."}
 res = requests.post('http://127.0.0.1:8080', json=text_input)
 print('response from server:',res.text)
