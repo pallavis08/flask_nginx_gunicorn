@@ -1,3 +1,5 @@
+""" This is the main application. This makes prediction on input text using BERT model for sentiment analysis from Hugging face """
+
 from flask import Flask, jsonify, render_template, request, make_response
 import transformers
 
@@ -5,6 +7,7 @@ app = Flask(__name__)
 
 hfmodel = transformers.pipeline('sentiment-analysis', model="nlptown/bert-base-multilingual-uncased-sentiment")
 
+# Alternate model: Roberta, used for testing.
 # hfmodel = transformers.pipeline('sentiment-analysis', model="siebert/sentiment-roberta-large-english")
 
 # inference
