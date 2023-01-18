@@ -8,4 +8,4 @@ App: This is a very simple app. We can post any text in json format and it outpu
 
 Nginx and gunicorn: I have used nginx as my web server. I am using gunicorn as wsgi to process multiple requests at the same time. I am using 4 workers. I am running two docker containers, one for nginx and another for Flask app. 
 
-Test file: I have included a test file. this is to test just the model or to test by POST request to the web server.
+Test file: I have included a test file. this is to test just the model or to test the app by POST request to the web server.
